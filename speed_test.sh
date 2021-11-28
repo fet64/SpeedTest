@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#######################################
+# WARNING: THIS SCRIPT WILL OVERWRITE #
+# EVERYTHING ON /dev/sda,             #
+# Use at own risk!                    #
+#######################################
+
 clear_ram() {
 	echo "clear cache:"
 	echo "sync; echo 1 > /proc/sys/vm/drop_caches"
